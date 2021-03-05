@@ -15,21 +15,15 @@ public class TestingMain {
             System.out.println("Error!");
         }
 
+        // Testing Calculator class
         Calculator calculator = new Calculator();
 
-        int resultCalculatorAdd = calculator.add(2, 3);
-        int resultCalculatorSubtract = calculator.subtract(3, 2);
-
-        if (resultCalculatorAdd == 5){
-            System.out.println("Dodawanie - test OK");
+        int addResult = calculator.add(180, 19);
+        int subResult = calculator.subtract(200, 150);
+        if ((addResult == 199) && (subResult == 50)) {
+            System.out.println("Calculator test OK");
         } else {
-            System.out.println("Dodawanie - Error!");
-        }
-
-        if (resultCalculatorSubtract == 1){
-            System.out.println("Odejmowanie - test OK");
-        } else {
-            System.out.println("Odejmowanie - Error!");
+            System.out.println("Calculator has error!");
         }
     }
 }
