@@ -3,7 +3,7 @@ package com.trial.testing.forum;
 import com.trial.testing.user.SimpleUser;
 import org.junit.*;
 
-public class FormTestSuite {
+public class ForumTestSuite {
     @Before
     public void before(){
         System.out.println("Test Case: begin");
